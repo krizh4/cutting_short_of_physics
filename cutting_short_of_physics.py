@@ -1,4 +1,4 @@
-from functions import E_k
+from functions import *
 import string
 superscript_map = {
     "0": "⁰", "1": "¹", "2": "²", "3": "³", "4": "⁴", "5": "⁵", "6": "⁶",
@@ -73,8 +73,8 @@ while not limit and count <= 10:
             m = int(input("Please Enter MASS: "))
             h = int(input("Please enter Height: "))
             g = int((input("Please enter GRAVITATION: ")))
-            E_p = float(m) * float(h) * float(g)
-            print(str(E_p) + "J")
+            f = E_p(m,h,g)
+            f.answer_potential()
             count += 1
     elif today_problem == "quit":
         quit("You Entered quit")
@@ -83,16 +83,4 @@ while not limit and count <= 10:
         count += 1
 if limit is True and count == 3:
             quit("You have reached the limit of guesses. Don't be lazy go study yourself...")
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
