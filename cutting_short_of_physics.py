@@ -21,7 +21,6 @@ while not limit and count <= 10:
     today_problem1 = (input("What do you want to solve today(Please enter one of the above?)"))
     today_problem = today_problem1.lower()
     if today_problem == "kinetic energy"  and today_problem != "quit":
-        #added error comment
         try:
             m = int(input("Please Enter MASS [From Kilograms]: "))
             v = int(input("Please enter VELOCITY: "))

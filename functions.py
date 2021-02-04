@@ -17,3 +17,4 @@ class E_p:
     def answer_potential(self):
         z = float(self.m) * float(self.h) * float(self.g)
         print(f"{z} J")
+
